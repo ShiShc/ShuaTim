@@ -6,6 +6,9 @@ import java.util.concurrent.TimeUnit;
  * @PackageName:PACKAGE_NAME
  * @Date:2021/3/3, 18:27
  * @Auther:ShiShc
+ * 关于设置线程池大小：
+ * 如果是CPU密集型任务，就需要尽量压榨CPU，参考值可以设为Ncpu+1。
+ * 如果是IO密集型任务，可以设为2*Ncpu。
  */
 
 public class ThreadPoolTest {
