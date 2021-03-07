@@ -21,9 +21,6 @@ public class lengthOfLongestSubString {
         }
 
         return result;
-        
-
-
 
     }
 
