@@ -1,4 +1,6 @@
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Objects;
 
 /**
  * @PackageName:PACKAGE_NAME
@@ -17,16 +19,31 @@ public class test {
         return h;
     }
 
+    public static int hash(Object key) {
+        int h;
+       return ((h = key.hashCode()) ^ (h >>> 16));
+    }
+
 
     public static void main(String[] args) {
-        String abc = new String("abc");
-        System.out.println(abc.hashCode());
-        System.out.println(hashCode2("abc"));
-        System.out.println((int)'a');
+//        String abc = new String("abc");
+//        System.out.println(abc.hashCode());
+//        System.out.println(hashCode2("abc"));
+//        System.out.println(hash("abc"));
+//
+//        System.out.println((int) 'a');
 
-        StringBuilder stringBuilder = new StringBuilder();
-        StringBuffer stringBuffer = new StringBuffer();
-        Object obj = new Object();
-        System.out.println(obj.toString());
+        String a;
+
+        System.out.println(Objects.hashCode('a'));
+        System.out.println((a = "a").hashCode());
+
+
+//        System.out.println((int)'a');
+//
+//        StringBuilder stringBuilder = new StringBuilder();
+//        StringBuffer stringBuffer = new StringBuffer();
+//        Object obj = new Object();
+//        System.out.println(obj.toString());
     }
 }
