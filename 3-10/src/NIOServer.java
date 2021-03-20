@@ -7,6 +7,7 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.locks.Condition;
 
 /**
  * @PackageName:PACKAGE_NAME
@@ -48,6 +49,7 @@ public class NIOServer {
             }
         }
 
+        Condition condition = new Condition();
 
 
     }

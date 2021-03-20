@@ -10,12 +10,12 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class MyTest {
     public static void main(String[] args) {
-
-        HashMap<Object, Object> map = new HashMap<>();
-
-
-        int x;
-        System.out.println((x = 3) == 4);
+//
+//        HashMap<Object, Object> map = new HashMap<>();
+//
+//
+//        int x;
+//        System.out.println((x = 3) == 4);
 
         //        ArrayList<Object> list = new ArrayList<>();
 //
@@ -52,6 +52,16 @@ public class MyTest {
 //        CopyOnWriteArrayList<Object> objects = new CopyOnWriteArrayList<>();
 
         ConcurrentHashMap<Object, Object> map1 = new ConcurrentHashMap<>();
+
+
+        String c = new String("123");
+        String d = new String("123");
+        System.out.println("c.equals(d) : " + c.equals(d));
+        System.out.println("c == d :" + (c == d));
+        Integer a = new Integer(123);
+        Integer b = new Integer(123);
+        System.out.println("a.equals(b) :" + a.equals(b));
+        System.out.println("a == b : " + (a == b));
 
     }
 }
