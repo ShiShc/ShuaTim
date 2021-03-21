@@ -50,8 +50,4 @@ public class SingleTon1 {
         if(singleTon1 == null) singleTon1 = new SingleTon1();
         return singleTon1;
     }
-
-    public static void main(String[] args) {
-
-    }
 }
