@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.HashMap;
 
 /**
@@ -21,6 +22,7 @@ public class lengthOfLongestSubString {
 //        }
 //
 //        return result;
+
         HashMap<Character, Integer> dic = new HashMap<>();
         int left = -1, result = 0;
 

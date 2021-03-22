@@ -49,7 +49,6 @@ public class NIOServer {
             }
         }
 
-        Condition condition = new Condition();
 
 
     }
