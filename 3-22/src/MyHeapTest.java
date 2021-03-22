@@ -4,6 +4,14 @@
  * @Auther:ShiShc
  */
 
+
+// OOM :   -Xms1m -Xmx8m -XX:+HeapDumpOutOfMemoryError
+    // DUMP堆内存溢出的情况
+    // -Xms:初始化大小 -Xmx:最大大小
+    // -XX:+PrintGCDetails
+    // -XX:+HeapDumpOutOfMemoryError
+
+    // Runtime类 : JVM调优
 public class MyHeapTest {
     public static void main(String[] args) {
         long total = Runtime.getRuntime().totalMemory();
