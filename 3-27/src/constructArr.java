@@ -18,7 +18,7 @@ public class constructArr {
 //            }
 //            result[i] = sum;
 //        }
-        
+
 
         return result;
     }
