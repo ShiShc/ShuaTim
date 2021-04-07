@@ -52,12 +52,21 @@ public class Test01 {
 
 
     public static void main(String[] args) {
-        int[] nums1 = {6,4,8,9};
-        int[] ints = func1(nums1, 12);
-        for(int i : ints) {
+        int[] nums1 = {6,4,8,9,1,6};
+        int[] ints1 = func1(nums1, 12);
+        int[] ints2 = func1(nums1, 7);
+        int[] ints3 = func1(nums1, 2);
+        System.out.println("---target = 12---");
+        for(int i : ints1) {
             System.out.println(i);
         }
-//        System.out.println(func1(nums1, 12));
-//        System.out.println(func1(nums1, 12));
+        System.out.println("---target = 7---");
+        for(int i : ints2) {
+            System.out.println(i);
+        }
+        System.out.println("---target = 2---");
+        for(int i : ints3) {
+            System.out.println(i);
+        }
     }
 }

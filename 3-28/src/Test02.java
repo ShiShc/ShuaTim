@@ -232,21 +232,15 @@ public class Test02 {
     public static void main(String[] args) {
         MyPriorityQueue<Integer> minHeap = new MyPriorityQueue<>();
         MyPriorityQueue<Integer> maxHeap = new MyPriorityQueue<>((x, y) -> (y - x));
-        minHeap.add(1);
-        minHeap.add(6);
-        minHeap.add(3);
-        minHeap.add(10);
-        minHeap.add(5);
-        minHeap.add(7);
-        System.out.println("-----minHeap-----");
-        System.out.println("size = " + minHeap.size());
-        System.out.println("min = " + minHeap.peek());
-        System.out.println("delete min = " + minHeap.poll());
-        System.out.println("size = " + minHeap.size());
-        System.out.println("min = " + minHeap.peek());
-        minHeap.increaseKey(3,1);
-        System.out.println("size = " + minHeap.size());
-        System.out.println("min = " + minHeap.peek());
-        System.out.println("-----minHeap-----");
+        maxHeap.add(4);
+        maxHeap.add(6);
+        maxHeap.add(3);
+        System.out.println("4,6,3 - the max : " + maxHeap.peek());
+        System.out.println("4,6,3 - the size : " + maxHeap.size());
+        maxHeap.add(9);
+        System.out.println("4,6,3,9(poll) - the max : " + maxHeap.poll());
+        System.out.println("4,6,3 - the max : " + maxHeap.peek());
+        maxHeap.increaseKey(4, 3);
+        System.out.println("7,6,3 - the max : " + maxHeap.peek());
     }
 }

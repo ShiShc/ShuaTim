@@ -33,5 +33,6 @@ public class Test04 {
         int[] arr1 = {9,7,5,3,1};
         int[] arr2 = {10,8,6,4,2};
         System.out.println(find(arr1, arr2, 0, 0, arr1.length -1, arr2.length-1, 3));
+        System.out.println(find(arr1, arr2, 0, 0, arr1.length -1, arr2.length-1, 5));
     }
 }
