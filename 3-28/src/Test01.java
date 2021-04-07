@@ -1,6 +1,7 @@
 import java.util.HashMap;
 
 /**
+ * @author Closer
  * @PackageName:PACKAGE_NAME
  * @Date:2021/3/28, 17:10
  * @Auther:ShiShc
@@ -12,7 +13,7 @@ public class Test01 {
      * @param target 和, another integer x.
      * @return 和为target的两数的下标
      */
-    public int[] func1 (int[] arr, int target) {
+    public static int[] func1 (int[] arr, int target) {
         HashMap<Integer, Integer> hashtable = new HashMap<>();
         for(int i = 0;i < arr.length; ++i) {
             // (Key, Value) <=> (arr[i], i)
@@ -31,8 +32,10 @@ public class Test01 {
      * @param target 和
      * @return 和为target的两个数
      */
-    public int[] func2 (int[] arr, int target) {
-        if(arr.length == 0) return new int[0];
+    public static int[] func2 (int[] arr, int target) {
+        if(arr.length == 0) {
+            return new int[0];
+        }
         int left = 0, right = arr.length - 1;
         while(left < right) {
             if(arr[left] + arr[right] == target) {
@@ -48,5 +51,13 @@ public class Test01 {
     }
 
 
-    public static void main(String[] args) {}
+    public static void main(String[] args) {
+        int[] nums1 = {6,4,8,9};
+        int[] ints = func1(nums1, 12);
+        for(int i : ints) {
+            System.out.println(i);
+        }
+//        System.out.println(func1(nums1, 12));
+//        System.out.println(func1(nums1, 12));
+    }
 }
