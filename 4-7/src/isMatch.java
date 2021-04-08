@@ -10,15 +10,17 @@ public class isMatch {
 
         boolean[][] dp = new boolean[slen + 1][plen + 1];
         dp[0][0] = true;
-        for(int i = 1;i <= slen; i++) {
+        for(int i = 0;i <= slen; i++) {
             for(int j = 1;j <= plen; j++) {
                 if(p.charAt(j-1) == '*') {
                     dp[i][j] = dp[i][j-2];
-                    if(match(s, p, i-1 ,j)) {
-                        dp[i][j] = dp[i][j-1];
+                    if(match(s, p, i,j-1)) {
+                        dp[i][j] = dp[i-1][j];
                     }
                 } else {
-                    dp[i][j] = dp[i-1][j-1] && match(s, p, i-1, j-1);
+                    if(match(s, p, i, j)) {
+                        dp[i][j] = dp[i-1][j-1];
+                    }
                 }
             }
         }
@@ -30,13 +32,14 @@ public class isMatch {
         if(i == 0) {
             return false;
         }
-        if(p.charAt(j) == '.') {
+        if(p.charAt(j - 1) == '.') {
             return true;
         }
-        return s.charAt(i) == p.charAt(j);
+        return s.charAt(i - 1) == p.charAt(j - 1);
     }
 
     public static void main(String[] args) {
-
+        //System.out.println(isMatch("mississippi", "mis*is*p*"));
+        System.out.println(isMatch("aab", "c*a*b"));
     }
 }
