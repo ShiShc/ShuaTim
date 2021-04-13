@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * @date:2021-4-13, 10:50
@@ -18,7 +19,7 @@ class TreeNode {
 public class zigzagLevelOrder {
     public ArrayList<ArrayList<Integer>> f(TreeNode root) {
         if(root == null) {
-            return null;
+            return new ArrayList<>();
         }
         Deque<TreeNode> deque = new LinkedList<>();
         deque.add(root);
