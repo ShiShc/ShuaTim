@@ -31,6 +31,7 @@ public class mergeTwoLists {
                 l1 = l1.next;
             } else {
                 temp.next = l2;
+                l2 = l2.next;
             }
             temp = temp.next;
         }
