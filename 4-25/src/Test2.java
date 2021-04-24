@@ -20,10 +20,7 @@ public class Test2 {
             while(!deque.isEmpty()) {
                 boolean flag = false;
                 for(int i = deque.size(); i > 0;i --) {
-                    int temp = 0;
-                    if(deque.peek() != null) {
-                        temp = deque.poll();
-                    }
+                    int temp = deque.removeFirst();
                     if(temp != 1) {
                         int x = temp / 2;
                         int y = temp - x;
