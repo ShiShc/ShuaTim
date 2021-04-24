@@ -20,6 +20,6 @@ public class combinationSum4 {
     }
 
     public static void main(String[] args) {
-        
+        System.out.println(new combinationSum4().f(new int[]{1, 2, 3}, 4));
     }
 }
