@@ -10,6 +10,7 @@ import java.time.temporal.ChronoUnit;
 public class DaysBetweenDates {
     public int f(String date1, String date2){
 
+        // 两个日期中相差的天数
         LocalDate d1 = LocalDate.parse(date1);
         LocalDate d2 = LocalDate.parse(date2);
 
