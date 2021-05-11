@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * @date: 2021-5-11, 15:59
  * @author: ShiShc
@@ -10,6 +12,28 @@
 
 public class Decode {
     public int[] f(int[] encoded) {
+        int length = encoded.length + 1;
+        int total = 0;
+        for(int i = 1;i <= length;i ++) {
+            total ^= i;
+        }
+        int odd = 0;
+        for(int i = 1;i < length - 1;i += 2) {
+            odd ^= encoded[i];
+        }
 
+        int first = total ^ odd;
+        int[] result = new int[length];
+        result[0] = first;
+        for(int i = 0;i < result.length - 1;i ++) {
+            result[i + 1] = result[i] ^ encoded[i];
+        }
+
+        return result;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(new Decode().f(new int[]{6, 5, 4, 6})));
     }
 }
