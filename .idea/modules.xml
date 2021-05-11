@@ -55,10 +55,11 @@
       <module fileurl="file://$PROJECT_DIR$/4-6/4-6.iml" filepath="$PROJECT_DIR$/4-6/4-6.iml" />
       <module fileurl="file://$PROJECT_DIR$/4-7/4-7.iml" filepath="$PROJECT_DIR$/4-7/4-7.iml" />
       <module fileurl="file://$PROJECT_DIR$/4-8/4-8.iml" filepath="$PROJECT_DIR$/4-8/4-8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5-11/5-11.iml" filepath="$PROJECT_DIR$/5-11/5-11.iml" />
       <module fileurl="file://$PROJECT_DIR$/5-3/5-3.iml" filepath="$PROJECT_DIR$/5-3/5-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/5-4/5-4.iml" filepath="$PROJECT_DIR$/5-4/5-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/5-6/5-6.iml" filepath="$PROJECT_DIR$/5-6/5-6.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ShuaTim.iml" filepath="$PROJECT_DIR$/ShuaTim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/leetcodeTim.iml" filepath="$PROJECT_DIR$/leetcodeTim.iml" />
     </modules>
   </component>
 </project>
