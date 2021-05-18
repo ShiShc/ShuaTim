@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.HashMap;
 
 /**
  * @date: 2021-5-17, 09:24
@@ -35,7 +36,18 @@ public class CoinChange {
     }
 
     public static void main(String[] args) {
-        System.out.println(new CoinChange().f(new int[]{1, 2, 5}, 11));
+       // System.out.println(new CoinChange().f(new int[]{1, 2, 5}, 11));
+
+        HashMap<Integer, String> map = new HashMap<Integer, String>() {
+            {
+                put(1, "String");
+                put(2, "String");
+            }
+        };
+
+        System.out.println(map.get(3));
     }
+
+
 
 }
