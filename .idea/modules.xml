@@ -68,6 +68,7 @@
       <module fileurl="file://$PROJECT_DIR$/5-4/5-4.iml" filepath="$PROJECT_DIR$/5-4/5-4.iml" />
       <module fileurl="file://$PROJECT_DIR$/5-6/5-6.iml" filepath="$PROJECT_DIR$/5-6/5-6.iml" />
       <module fileurl="file://$PROJECT_DIR$/binarySearch/binarySearch.iml" filepath="$PROJECT_DIR$/binarySearch/binarySearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/doublePointer/doublePointer.iml" filepath="$PROJECT_DIR$/doublePointer/doublePointer.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcodeTim.iml" filepath="$PROJECT_DIR$/leetcodeTim.iml" />
     </modules>
   </component>
